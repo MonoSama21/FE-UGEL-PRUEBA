@@ -26,7 +26,6 @@
       "develop": true
     }
   },
-  "$comment": "NOTA: Las variables 'env' y 'build.env' son para Vercel. Para desarrollo local, usa archivos .env",
   "env": {
     "VITE_API_BASE_URL": "https://tutorial-nine-kappa.vercel.app",
     "VITE_APP_ENV": "production"
