@@ -22,14 +22,11 @@ npm run build
 
 La aplicación estará disponible en `http://localhost:5173`
 
-## 📖 Documentación Completa
+## 📖 Documentación
 
 - 📘 **[INICIO_RAPIDO.md](./INICIO_RAPIDO.md)** - Guía de inicio rápido
-- 📗 **[README_IMPLEMENTACION.md](./README_IMPLEMENTACION.md)** - Documentación técnica completa
 - 📙 **[DEPLOY_GUIDE.md](./DEPLOY_GUIDE.md)** - Guía de deployment en Vercel
-- � **[ENV_CONFIG.md](./ENV_CONFIG.md)** - Configuración de variables de entorno
-- �📕 **[RESUMEN_IMPLEMENTACION.md](./RESUMEN_IMPLEMENTACION.md)** - Resumen de implementación
-- ✅ **[CHECKLIST_VERIFICACION.md](./CHECKLIST_VERIFICACION.md)** - Checklist pre-deploy
+- 🔧 **[ENV_CONFIG.md](./ENV_CONFIG.md)** - Configuración de variables de entorno
 
 ## ✨ Características
 
@@ -132,73 +129,37 @@ Para más detalles, consulta [DEPLOY_GUIDE.md](./DEPLOY_GUIDE.md)
 ## 🧪 Testing
 
 ```bash
-# Build de prueba
-npm run build
-
-# Preview de producción
-npm run preview
+npm run build     # Build de prueba
+npm run preview   # Preview de producción local
 ```
-
-### Checklist de Testing
-- [ ] Formulario RSVP funciona
-- [ ] Login funciona
-- [ ] Dashboard muestra confirmaciones
-- [ ] Filtros y búsqueda funcionan
-- [ ] Responsive en todos los dispositivos
 
 ## 🔒 Seguridad
 
-- ✅ Autenticación con JWT
-- ✅ Rutas protegidas
-- ✅ Token en localStorage
-- ✅ Interceptores de Axios
-- ✅ Variables de entorno
-- ✅ No hay credenciales hardcodeadas
+- ✅ Autenticación JWT
+- ✅ Rutas protegidas con ProtectedRoute
+- ✅ Variables de entorno (sin URLs hardcodeadas)
+- ✅ Interceptores de Axios para manejo de tokens
 
 ## 📝 Scripts Disponibles
 
 ```bash
-npm run dev       # Servidor de desarrollo
+npm run dev       # Servidor de desarrollo (http://localhost:5173)
 npm run build     # Build de producción
-npm run preview   # Preview de build
-npm run lint      # Linting
+npm run preview   # Preview del build local
 ```
 
 ## 🐛 Troubleshooting
 
-### Error de módulos
-```bash
-npm install
-```
+**Error: "VITE_API_BASE_URL no está definida"**
+- Verifica que `.env.development` o `.env.production` exista
+- Consulta [ENV_CONFIG.md](./ENV_CONFIG.md)
 
-### Error de CORS
-Verifica que el backend tenga CORS configurado para tu dominio.
+**Error de CORS:**
+- Verifica que el backend tenga CORS configurado
 
-### Token expirado
-El token expira después de 24 horas. Cierra sesión y vuelve a iniciar.
-
-Para más soluciones, consulta [INICIO_RAPIDO.md](./INICIO_RAPIDO.md)
-
-## 📚 Recursos
-
-- [Documentación de React](https://react.dev)
-- [Documentación de Vite](https://vitejs.dev)
-- [Documentación de Vercel](https://vercel.com/docs)
-
-## 👥 Equipo
-
-**Desarrollado para la boda de Diter & Vivian** 💕
-
-## 📄 Licencia
-
-Este proyecto es privado y está bajo licencia MIT.
+**Cambios en .env no funcionan:**
+- Reinicia el servidor de desarrollo (`Ctrl+C` → `npm run dev`)
 
 ---
 
-<div align="center">
-
-**Hecho con ❤️ para una ocasión especial**
-
-¡Felicitaciones a los novios! 🎊
-
-</div>
+**Hecho con ❤️ para Diter & Vivian** 💕
