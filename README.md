@@ -69,8 +69,8 @@ Contraseña: BodaDyV2026!
 
 ## 🌐 API Endpoints
 
-- **Desarrollo**: https://boda-diter-vivian-dev.onrender.com
-- **Producción**: https://boda-diter-vivian-prod.onrender.com
+- **Desarrollo**: https://tutorial-git-develop-monosama21s-projects.vercel.app
+- **Producción**: https://tutorial-nine-kappa.vercel.app
 
 ### Endpoints Disponibles
 - `POST /boda/asistencia` - Crear confirmación (público)
@@ -109,13 +109,13 @@ src/
 **Rama develop:**
 ```env
 VITE_APP_ENV=development
-VITE_API_BASE_URL=https://boda-diter-vivian-dev.onrender.com
+VITE_API_BASE_URL=https://tutorial-git-develop-monosama21s-projects.vercel.app
 ```
 
 **Rama main (producción):**
 ```env
 VITE_APP_ENV=production
-VITE_API_BASE_URL=https://boda-diter-vivian-prod.onrender.com
+VITE_API_BASE_URL=https://tutorial-nine-kappa.vercel.app
 ```
 
 Para más detalles, consulta [DEPLOY_GUIDE.md](./DEPLOY_GUIDE.md)

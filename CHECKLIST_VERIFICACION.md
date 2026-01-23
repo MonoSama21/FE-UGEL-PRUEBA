@@ -186,8 +186,8 @@ git push origin main
 ## 📞 Contactos Importantes
 
 - **Frontend Deploy**: [URL de Vercel]
-- **Backend API Dev**: https://boda-diter-vivian-dev.onrender.com
-- **Backend API Prod**: https://boda-diter-vivian-prod.onrender.com
+- **Backend API Dev**: https://tutorial-git-develop-monosama21s-projects.vercel.app
+- **Backend API Prod**: https://tutorial-nine-kappa.vercel.app
 - **Credenciales Dashboard**: 
   - Usuario: diter-vivian
   - Contraseña: BodaDyV2026!

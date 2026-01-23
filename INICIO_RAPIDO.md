@@ -36,8 +36,8 @@ npm run preview
 - **Dashboard**: http://localhost:5173/dashboard
 
 ### API Endpoints
-- **Desarrollo**: https://boda-diter-vivian-dev.onrender.com
-- **Producción**: https://boda-diter-vivian-prod.onrender.com
+- **Desarrollo**: https://tutorial-git-develop-monosama21s-projects.vercel.app
+- **Producción**: https://tutorial-nine-kappa.vercel.app
 
 ## 🔑 Credenciales de Prueba
 
@@ -89,7 +89,7 @@ Crear archivo `.env.development`:
 
 ```env
 VITE_APP_ENV=development
-VITE_API_BASE_URL=https://boda-diter-vivian-dev.onrender.com
+VITE_API_BASE_URL=https://tutorial-git-develop-monosama21s-projects.vercel.app
 ```
 
 ## 📦 Deploy en Vercel
@@ -108,13 +108,13 @@ VITE_API_BASE_URL=https://boda-diter-vivian-dev.onrender.com
    **Para develop:**
    ```
    VITE_APP_ENV = development
-   VITE_API_BASE_URL = https://boda-diter-vivian-dev.onrender.com
+   VITE_API_BASE_URL = https://tutorial-git-develop-monosama21s-projects.vercel.app
    ```
    
    **Para main (producción):**
    ```
    VITE_APP_ENV = production
-   VITE_API_BASE_URL = https://boda-diter-vivian-prod.onrender.com
+   VITE_API_BASE_URL = https://tutorial-nine-kappa.vercel.app
    ```
 
 3. **Deploy**
@@ -204,7 +204,7 @@ Abre la consola del navegador (F12) y verás:
 ```
 🔧 Configuración de API:
   ambiente: development
-  apiUrl: https://boda-diter-vivian-dev.onrender.com
+  apiUrl: https://tutorial-git-develop-monosama21s-projects.vercel.app
 ```
 
 ### Verificar build

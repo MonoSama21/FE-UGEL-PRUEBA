@@ -13,8 +13,8 @@ const isProduction = import.meta.env.PROD || import.meta.env.VITE_APP_ENV === 'p
 
 // URLs de API según documentación
 const API_URLS = {
-  development: 'https://boda-diter-vivian-dev.onrender.com',
-  production: 'https://boda-diter-vivian-prod.onrender.com',
+  development: 'https://tutorial-git-develop-monosama21s-projects.vercel.app',
+  production: 'https://tutorial-nine-kappa.vercel.app',
   local: 'http://localhost:3000'
 };
 

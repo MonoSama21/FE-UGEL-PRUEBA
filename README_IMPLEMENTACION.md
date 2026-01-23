@@ -84,7 +84,7 @@ Edita `.env.development`:
 
 ```env
 VITE_APP_ENV=development
-VITE_API_BASE_URL=https://boda-diter-vivian-dev.onrender.com
+VITE_API_BASE_URL=https://tutorial-git-develop-monosama21s-projects.vercel.app
 ```
 
 ### 4. Ejecutar en modo desarrollo
@@ -121,13 +121,13 @@ Este proyecto está configurado para trabajar con dos ramas:
 **Para rama `develop`:**
 ```
 VITE_APP_ENV = development
-VITE_API_BASE_URL = https://boda-diter-vivian-dev.onrender.com
+VITE_API_BASE_URL = https://tutorial-git-develop-monosama21s-projects.vercel.app
 ```
 
 **Para rama `main` (producción):**
 ```
 VITE_APP_ENV = production
-VITE_API_BASE_URL = https://boda-diter-vivian-prod.onrender.com
+VITE_API_BASE_URL = https://tutorial-nine-kappa.vercel.app
 ```
 
 ### Deploy Automático
@@ -226,7 +226,7 @@ Abre la consola del navegador. En desarrollo, verás logs como:
 ```
 🔧 Configuración de API:
   ambiente: development
-  apiUrl: https://boda-diter-vivian-dev.onrender.com
+  apiUrl: https://tutorial-git-develop-monosama21s-projects.vercel.app
   isDev: true
   isProd: false
 ```

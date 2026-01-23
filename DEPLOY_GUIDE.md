@@ -22,8 +22,8 @@ git push -u origin develop
 
 Tu repositorio debe tener dos ramas principales:
 
-- **`main`** → Producción (API: https://boda-diter-vivian-prod.onrender.com)
-- **`develop`** → Desarrollo (API: https://boda-diter-vivian-dev.onrender.com)
+- **`main`** → Producción (API: https://tutorial-nine-kappa.vercel.app)
+- **`develop`** → Desarrollo (API: https://tutorial-git-develop-monosama21s-projects.vercel.app)
 
 ### 4. Workflow de desarrollo
 
@@ -67,7 +67,7 @@ Vercel debería detectar automáticamente que es un proyecto Vite. Verifica:
 
 ```
 VITE_APP_ENV = production
-VITE_API_BASE_URL = https://boda-diter-vivian-prod.onrender.com
+VITE_API_BASE_URL = https://tutorial-nine-kappa.vercel.app
 ```
 
 #### Para Desarrollo (rama develop)
@@ -76,7 +76,7 @@ VITE_API_BASE_URL = https://boda-diter-vivian-prod.onrender.com
 
 ```
 VITE_APP_ENV = development
-VITE_API_BASE_URL = https://boda-diter-vivian-dev.onrender.com
+VITE_API_BASE_URL = https://tutorial-git-develop-monosama21s-projects.vercel.app
 ```
 
 ### Paso 4: Configurar Ramas
@@ -177,7 +177,7 @@ npm run dev
 # En la consola del navegador deberías ver:
 # 🔧 Configuración de API:
 #   ambiente: development
-#   apiUrl: https://boda-diter-vivian-dev.onrender.com
+#   apiUrl: https://tutorial-git-develop-monosama21s-projects.vercel.app
 ```
 
 ### En Vercel Deploy
