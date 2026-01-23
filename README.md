@@ -27,7 +27,8 @@ La aplicación estará disponible en `http://localhost:5173`
 - 📘 **[INICIO_RAPIDO.md](./INICIO_RAPIDO.md)** - Guía de inicio rápido
 - 📗 **[README_IMPLEMENTACION.md](./README_IMPLEMENTACION.md)** - Documentación técnica completa
 - 📙 **[DEPLOY_GUIDE.md](./DEPLOY_GUIDE.md)** - Guía de deployment en Vercel
-- 📕 **[RESUMEN_IMPLEMENTACION.md](./RESUMEN_IMPLEMENTACION.md)** - Resumen de implementación
+- � **[ENV_CONFIG.md](./ENV_CONFIG.md)** - Configuración de variables de entorno
+- �📕 **[RESUMEN_IMPLEMENTACION.md](./RESUMEN_IMPLEMENTACION.md)** - Resumen de implementación
 - ✅ **[CHECKLIST_VERIFICACION.md](./CHECKLIST_VERIFICACION.md)** - Checklist pre-deploy
 
 ## ✨ Características
@@ -104,7 +105,11 @@ src/
 
 ## 🚀 Deploy en Vercel
 
-### Variables de Entorno
+### ⚠️ Configuración Obligatoria: Variables de Entorno
+
+**IMPORTANTE:** Este proyecto NO tiene URLs hardcodeadas. Todo se configura mediante archivos `.env`.
+
+**Debes definir estas variables de entorno en Vercel:**
 
 **Rama develop:**
 ```env
@@ -117,6 +122,10 @@ VITE_API_BASE_URL=https://tutorial-git-develop-monosama21s-projects.vercel.app
 VITE_APP_ENV=production
 VITE_API_BASE_URL=https://tutorial-nine-kappa.vercel.app
 ```
+
+**Para desarrollo local:**
+- Copia `.env.example` a `.env.development`
+- Modifica las URLs según tu entorno
 
 Para más detalles, consulta [DEPLOY_GUIDE.md](./DEPLOY_GUIDE.md)
 

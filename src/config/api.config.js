@@ -1,50 +1,30 @@
 /**
  * Configuración de API para múltiples ambientes
  * 
- * NOTA IMPORTANTE: 
- * - En producción (rama main), Vercel automáticamente usa MODE=production
- * - Para desarrollo (rama develop), configurar variable de entorno VITE_APP_ENV=development
- * - Las URLs de API se detectan automáticamente según el ambiente
+ * IMPORTANTE: 
+ * - Todas las URLs se definen en archivos .env
+ * - No hay URLs hardcodeadas en el código
+ * - Define VITE_API_BASE_URL en .env.development o .env.production
+ * - Define VITE_APP_ENV en .env para especificar el ambiente
  */
 
-// Detectar ambiente basado en variables de Vite
-const isDevelopment = import.meta.env.DEV || import.meta.env.VITE_APP_ENV === 'development';
-const isProduction = import.meta.env.PROD || import.meta.env.VITE_APP_ENV === 'production';
-
-// URLs de API según documentación
-const API_URLS = {
-  development: 'https://tutorial-git-develop-monosama21s-projects.vercel.app',
-  production: 'https://tutorial-nine-kappa.vercel.app',
-  local: 'http://localhost:3000'
-};
-
-// Función para obtener la URL de API correcta
+// Obtener la URL de la API desde variables de entorno
+// OBLIGATORIO: Debe estar definida en .env.development o .env.production
 const getApiBaseUrl = () => {
-  // Si hay una URL personalizada en variables de entorno, usar esa
-  if (import.meta.env.VITE_API_BASE_URL) {
-    return import.meta.env.VITE_API_BASE_URL;
+  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  
+  if (!apiUrl) {
+    console.error('❌ ERROR: VITE_API_BASE_URL no está definida en las variables de entorno');
+    console.error('Por favor, define VITE_API_BASE_URL en tu archivo .env');
+    throw new Error('VITE_API_BASE_URL no está definida. Verifica tu archivo .env');
   }
-
-  // Si estamos en desarrollo local (npm run dev)
-  if (isDevelopment && import.meta.env.DEV) {
-    return API_URLS.development;
-  }
-
-  // Si estamos en producción (build)
-  if (isProduction) {
-    return API_URLS.production;
-  }
-
-  // Por defecto, development
-  return API_URLS.development;
+  
+  return apiUrl;
 };
 
-// Determinar el ambiente actual
+// Determinar el ambiente actual desde variables de entorno
 const getCurrentEnvironment = () => {
-  if (import.meta.env.VITE_APP_ENV) {
-    return import.meta.env.VITE_APP_ENV;
-  }
-  return isProduction ? 'production' : 'development';
+  return import.meta.env.VITE_APP_ENV || import.meta.env.MODE || 'development';
 };
 
 const config = {
@@ -81,13 +61,15 @@ const config = {
   }
 };
 
+// Detectar si estamos en desarrollo
+const isDevelopment = getCurrentEnvironment() === 'development' || import.meta.env.DEV;
+
 // Log de configuración en desarrollo (útil para debugging)
 if (isDevelopment) {
   console.log('🔧 Configuración de API:', {
     ambiente: config.environment,
     apiUrl: config.apiBaseUrl,
-    isDev: isDevelopment,
-    isProd: isProduction
+    source: 'Variables de entorno (.env)'
   });
 }
 
