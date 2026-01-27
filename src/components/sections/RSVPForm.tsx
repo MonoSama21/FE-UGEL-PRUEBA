@@ -147,14 +147,14 @@ export const RSVPForm = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <UserCheck className="w-16 h-16 mx-auto text-rose-500 mb-6" />
-          <h2 className="text-5xl md:text-6xl font-bold text-rose-600 mb-4">
+          <UserCheck className="w-16 h-16 mx-auto text-gold-500 mb-6" />
+          <h2 className="text-5xl md:text-6xl font-bold text-gold-600 mb-4">
             Confirma tu Asistencia
           </h2>
           <div className="flex items-center justify-center gap-3 mt-6 mb-8">
-            <div className="h-px w-20 bg-rose-300"></div>
-            <div className="w-2 h-2 bg-rose-400 rounded-full"></div>
-            <div className="h-px w-20 bg-rose-300"></div>
+            <div className="h-px w-20 bg-gold-300"></div>
+            <div className="w-2 h-2 bg-gold-400 rounded-full"></div>
+            <div className="h-px w-20 bg-gold-300"></div>
           </div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Tu presencia es el mejor regalo. Por favor confirma tu asistencia antes del 1 de Mayo de 2026
@@ -199,13 +199,13 @@ export const RSVPForm = () => {
         {/* Formulario */}
         <form
           onSubmit={handleSubmit}
-          className="bg-gradient-to-br from-rose-50 to-pink-50 p-8 md:p-12 rounded-3xl shadow-2xl"
+          className="bg-gradient-to-br from-gold-50 to-gold-100 p-8 md:p-12 rounded-3xl shadow-2xl"
         >
           <div className="space-y-6">
             {/* Nombre Completo */}
             <div>
               <label htmlFor="nombre_completo" className="block text-gray-700 font-semibold mb-2">
-                Nombre Completo <span className="text-rose-500">*</span>
+                Nombre Completo <span className="text-gold-500">*</span>
               </label>
               <input
                 type="text"
@@ -216,7 +216,7 @@ export const RSVPForm = () => {
                 placeholder="Juan Pérez García"
                 required
                 disabled={isSubmitting}
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-rose-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gold-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
               />
             </div>
 
@@ -224,7 +224,7 @@ export const RSVPForm = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="correo_electronico" className="block text-gray-700 font-semibold mb-2">
-                  Correo Electrónico <span className="text-rose-500">*</span>
+                  Correo Electrónico <span className="text-gold-500">*</span>
                 </label>
                 <input
                   type="email"
@@ -235,7 +235,7 @@ export const RSVPForm = () => {
                   placeholder="correo@ejemplo.com"
                   required
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-rose-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gold-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
                 />
               </div>
 
@@ -251,7 +251,7 @@ export const RSVPForm = () => {
                   onChange={handleChange}
                   placeholder="+51 987 654 321"
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-rose-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gold-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
                 />
               </div>
             </div>
@@ -259,7 +259,7 @@ export const RSVPForm = () => {
             {/* ¿Asistirás? */}
             <div>
               <label className="block text-gray-700 font-semibold mb-3">
-                ¿Asistirás a nuestra boda? <span className="text-rose-500">*</span>
+                ¿Asistirás a nuestra boda? <span className="text-gold-500">*</span>
               </label>
               <div className="flex gap-4">
                 <button
@@ -293,7 +293,7 @@ export const RSVPForm = () => {
             {formData.asistira && (
               <div>
                 <label htmlFor="numero_invitados" className="block text-gray-700 font-semibold mb-2">
-                  Número de Personas (Incluyéndote) <span className="text-rose-500">*</span>
+                  Número de Personas (Incluyéndote) <span className="text-gold-500">*</span>
                 </label>
                 <input
                   type="number"
@@ -305,7 +305,7 @@ export const RSVPForm = () => {
                   max="10"
                   required
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-rose-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gold-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
                 />
                 <p className="mt-2 text-sm text-gray-600">
                   Por favor indica cuántas personas asistirán en total (tú + acompañantes)
@@ -317,7 +317,6 @@ export const RSVPForm = () => {
             {formData.asistira && (
               <div>
                 <label htmlFor="cancion_favorita" className="block text-gray-700 font-semibold mb-2">
-                  <Music className="w-5 h-5 inline mr-2" />
                   Canción Favorita <span className="text-gray-400">(Opcional)</span>
                 </label>
                 <input
@@ -328,7 +327,7 @@ export const RSVPForm = () => {
                   onChange={handleChange}
                   placeholder="Bailando - Enrique Iglesias"
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-rose-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gold-400 focus:outline-none transition-colors bg-white disabled:opacity-50"
                 />
                 <p className="mt-2 text-sm text-gray-600">
                   Comparte tu canción favorita y la incluiremos en la fiesta 🎵
@@ -350,7 +349,7 @@ export const RSVPForm = () => {
                 rows={4}
                 maxLength={500}
                 disabled={isSubmitting}
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-rose-400 focus:outline-none transition-colors bg-white resize-none disabled:opacity-50"
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gold-400 focus:outline-none transition-colors bg-white resize-none disabled:opacity-50"
               />
               <p className="mt-2 text-sm text-gray-600 text-right">
                 {formData.mensaje?.length || 0} / 500 caracteres
@@ -361,7 +360,7 @@ export const RSVPForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+              className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
             >
               {isSubmitting ? (
                 <>

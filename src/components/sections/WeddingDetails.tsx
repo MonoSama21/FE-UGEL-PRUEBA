@@ -6,30 +6,16 @@ export const WeddingDetails = () => {
     {
       icon: Church,
       title: 'Ceremonia',
-      content: 'Iglesia Santa María',
+      content: 'Parroquia San Pedro de Grocio Prado',
       time: '5:00 PM',
-      address: 'Av. Principal #123, Ciudad',
-    },
-    {
-      icon: Calendar,
-      title: 'Fecha',
-      content: '13 de Febrero',
-      time: '2026',
-      address: 'Sábado',
+      address: 'Frente a la plaza de Grocio Prado',
     },
     {
       icon: MapPin,
       title: 'Recepción',
-      content: 'Salón de Eventos "El Jardín"',
+      content: 'Salón de recepciones "El Rinconcito Escondido"',
       time: '7:00 PM',
-      address: 'Calle Flores #456, Ciudad',
-    },
-    {
-      icon: Clock,
-      title: 'Horario',
-      content: 'Ceremonia: 5:00 PM',
-      time: 'Recepción: 7:00 PM',
-      address: 'Fiesta hasta la medianoche',
+      address: ' C. La Unión Nº 100, 11703 - Grocio Prado',
     },
   ]
 
@@ -43,7 +29,7 @@ export const WeddingDetails = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="font-script text-6xl md:text-7xl text-rose-600 mb-4">
+          <h2 className="font-script text-6xl md:text-7xl text-gold-600 mb-4">
             Detalles del Evento
           </h2>
           <div className="flex items-center justify-center gap-3 mt-6">
@@ -53,7 +39,7 @@ export const WeddingDetails = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
           {details.map((detail, index) => (
             <motion.div
               key={index}
@@ -61,10 +47,10 @@ export const WeddingDetails = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-gradient-to-br from-rose-50 to-gold-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+              className="bg-gradient-to-br from-gold-50 to-gold-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
             >
               <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
-                <detail.icon className="w-8 h-8 text-rose-500" />
+                <detail.icon className="w-8 h-8 text-gold-500" />
               </div>
               <h3 className="font-serif text-2xl text-gray-800 mb-3">{detail.title}</h3>
               <p className="text-gray-700 font-medium mb-2">{detail.content}</p>
@@ -81,7 +67,7 @@ export const WeddingDetails = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-rose-100 via-white to-gold-100 p-8 rounded-2xl shadow-lg max-w-3xl mx-auto">
+          <div className="bg-gradient-to-r from-gold-100 via-white to-gold-100 p-8 rounded-2xl shadow-lg max-w-3xl mx-auto">
             <h3 className="font-serif text-3xl text-gray-800 mb-4">Código de Vestimenta</h3>
             <p className="text-xl text-gray-700 mb-2">Formal / Etiqueta</p>
             <p className="text-gray-600">
