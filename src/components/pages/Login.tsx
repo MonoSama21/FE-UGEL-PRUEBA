@@ -77,7 +77,8 @@ export const Login = () => {
           <div className="text-center mb-8">
             <Heart className="w-16 h-16 mx-auto text-rose-500 mb-4" />
             <h1 className="text-4xl font-bold text-rose-600 mb-2">
-              Diter & Vivian
+              Dieter & Vivian
+              Boda 2027
             </h1>
             <div className="flex items-center justify-center gap-3 my-4">
               <div className="h-px w-16 bg-rose-300"></div>
@@ -131,7 +132,7 @@ export const Login = () => {
                   name="username"
                   value={formData.username}
                   onChange={handleChange}
-                  placeholder="diter-vivian"
+                  placeholder="Ingrese su usuario"
                   required
                   disabled={isSubmitting}
                   className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-rose-400 focus:outline-none transition-colors bg-gray-50 disabled:opacity-50"

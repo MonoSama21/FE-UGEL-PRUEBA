@@ -3,7 +3,7 @@ import { Heart, Sparkles } from 'lucide-react'
 
 export const OurStory = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-rose-50 via-white to-gold-50">
+    <section className="py-24 px-4 bg-gradient-to-br from-gold-50 via-white to-gold-100">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,12 +12,12 @@ export const OurStory = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="font-script text-6xl md:text-7xl text-rose-600 mb-4">
+          <h2 className="font-script text-6xl md:text-7xl text-gold-600 mb-4">
             Nuestra Historia
           </h2>
           <div className="flex items-center justify-center gap-3 mt-6">
             <div className="h-px w-20 bg-gold-400"></div>
-            <Heart className="w-5 h-5 text-rose-400" />
+            <Heart className="w-5 h-5 text-gold-500" />
             <div className="h-px w-20 bg-gold-400"></div>
           </div>
         </motion.div>
@@ -44,7 +44,7 @@ export const OurStory = () => {
             </div>
 
             <div className="flex items-start gap-4 mb-8">
-              <Heart className="w-8 h-8 text-rose-500 flex-shrink-0 mt-1" />
+              <Heart className="w-8 h-8 text-gold-500 flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-serif text-3xl text-gray-800 mb-4">Nuestro Amor</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -71,7 +71,7 @@ export const OurStory = () => {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="font-script text-4xl text-rose-600">
+            <p className="font-script text-4xl text-gold-600">
               Y así, dos corazones se convierten en uno
             </p>
           </div>
