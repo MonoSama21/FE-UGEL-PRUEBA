@@ -1,34 +1,14 @@
-import { Heart } from 'lucide-react'
-
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-gold-900 to-gold-800 text-white py-12 px-4">
-      <div className="max-w-4xl mx-auto text-center">
-        <Heart className="w-12 h-12 mx-auto mb-6 text-gold-300 animate-pulse" />
-        
-        <h3 className="font-script text-5xl mb-4">Vivian & Dieter</h3>
-        
-        <div className="flex items-center justify-center gap-3 mb-6">
-          <div className="h-px w-16 bg-gold-300"></div>
-          <div className="w-2 h-2 bg-gold-300 rounded-full"></div>
-          <div className="h-px w-16 bg-gold-300"></div>
-        </div>
-        
-        <p className="text-gold-100 mb-4 text-lg">
-          13 de Febrero, 2027
-        </p>
-        
-        <p className="text-gold-200 italic mb-8">
-          "Dos almas, un solo corazón"
-        </p>
-        
-        <div className="border-t border-gold-700 pt-8 mt-8">
-          <p className="text-gold-300 text-sm">
-            Vivian & Dieter. Con amor - Web desarrollada por DEVQORA💕
-          </p>
-          <p className="text-gold-300 text-sm mt-3">
-            © {new Date().getFullYear()} Web desarrollada por DEVQORA - Yrvin Pachas 944405449
-          </p>
+    <footer className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-10 px-4">
+      <div className="max-w-4xl mx-auto flex flex-col items-center text-center gap-4">
+        <img src="/logo.png" alt="Logo UGEL" className="h-16 w-16 rounded-full bg-white p-2 shadow mb-2" />
+        <h3 className="text-2xl font-bold tracking-wide mb-1">UGEL - Estrategia de Refuerzo Escolar</h3>
+        <p className="text-blue-100 text-base mb-1">Monitoreo de Implementación - Nivel Primaria</p>
+        <p className="text-blue-200 text-sm mb-2">Etapa 2 | Año 2026</p>
+        <div className="border-t border-blue-400 w-full pt-6 mt-4">
+          <p className="text-blue-200 text-xs">Esta plataforma es solo informativa y de uso interno institucional.</p>
+          <p className="text-blue-300 text-xs mt-2">© {new Date().getFullYear()} Web desarrollada por <span className="font-semibold">DEVQORA</span> - Yrvin Pachas 944405449</p>
         </div>
       </div>
     </footer>
